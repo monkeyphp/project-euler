@@ -25,11 +25,11 @@ int main()
     signed long target = 600851475143;
                          
     signed long counter = 3;
-    signed long sieve[1000000];
+    signed long sieve[10000];
     signed long current = 0;
     signed long squared = 0;
 
-    for (int i = 0; i < 1000000; i++)
+    for (int i = 0; i < 10000; i++)
     {
         sieve[i] = 0;
     }
@@ -51,7 +51,7 @@ int main()
         
         counter++;
         
-    } while (counter < 1000000);
+    } while (counter < 10000);
 
     cout << "Current: " << current << endl;
     cout << "Counter: " << counter << endl;
@@ -61,7 +61,7 @@ int main()
 
 bool sieved(long sieve[], long number)
 {
-    for (int i = 0; i < 1000000; i++)
+    for (int i = 0; i < 10000; i++)
     {
         if (sieve[i] == 0) 
         {
